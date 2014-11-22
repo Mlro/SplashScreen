@@ -1,0 +1,6 @@
+<root>
+    <item name='android.preference.PreferenceActivity'>
+        <annotation name='java.lang.annotation.Deprecated' />
+        <annotation name='org.jetbrains.annotations.NotNull' />
+    </item>
+</root>

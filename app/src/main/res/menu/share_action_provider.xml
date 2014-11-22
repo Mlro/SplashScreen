@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item
+        android:id="@+id/more"
+        android:showAsAction="ifRoom"
+        android:icon="@drawable/abs__ic_menu_moreoverflow_normal_holo_dark"
+        android:title="@string/more">
+        <menu>
+
+            <item
+                android:id="@+id/emailButton"
+                android:actionProviderClass="com.actionbarsherlock.widget.ShareActionProvider"
+                android:showAsAction="never"
+                android:icon="@drawable/email_menu"
+                android:title="@string/more_email"/>
+            <item
+                android:id="@+id/aboutButton"
+                android:showAsAction="never"
+                android:icon="@drawable/about_menu"
+                android:title="@string/more_about"/>
+            <item
+                android:id="@+id/rebootButton"
+                android:showAsAction="never"
+                android:icon="@drawable/reboot_menu"
+                android:title="@string/more_reboot"/>
+        </menu>
+
+    </item>
+
+</menu>

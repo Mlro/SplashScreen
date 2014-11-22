@@ -1,0 +1,108 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="ro.mole.ro.splashscreen.Nueva3"
+    android:background="@drawable/background_holo_dark">
+
+    <!-- The primary full-screen view. This can be replaced with whatever view
+         is needed to present your content, e.g. VideoView, SurfaceView,
+         TextureView, etc. -->
+    <TextView android:id="@+id/fullscreen_content" android:layout_width="match_parent"
+        android:layout_height="match_parent" android:keepScreenOn="true" android:textColor="#33b5e5"
+        android:textStyle="bold|italic" android:textSize="50sp" android:gravity="center"
+        android:text="@string/dummy_content" />
+
+    <!-- This FrameLayout insets its children based on system windows using
+         android:fitsSystemWindows. -->
+    <FrameLayout  android:id="@+id/fullscreen_content_controls" android:layout_width="match_parent" android:layout_height="match_parent"
+        android:fitsSystemWindows="true"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            tools:context=".Nueva3"
+            android:orientation="horizontal"
+            android:background="@android:color/transparent">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/llTopBar"
+                android:orientation="horizontal"
+
+                android:divider="#00ff00"
+                android:dividerPadding="5dip"
+                android:showDividers="middle"
+                style="?android:attr/listSeparatorTextViewStyle"
+                android:layout_alignParentTop="true"
+                android:layout_above="@+id/linearLayout">
+
+                <ImageView
+                    android:id="@+id/imageView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_launcher"
+                    android:layout_gravity="bottom"
+                    android:contentDescription="@string/oooooo" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dip"
+                android:divider="#990000"
+                android:dividerPadding="5dip"
+                android:showDividers="middle"
+                style="?android:attr/listSeparatorTextViewStyle"
+                android:layout_alignParentBottom="true"
+                android:id="@+id/linearLayout"
+                android:background="@android:color/transparent"
+                android:gravity="center">
+
+
+                <Button
+                    android:id="@+id/dummy1"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:onClick="splash1"
+                    android:text="@string/splasha" />
+
+                <View
+                    android:id="@+id/Divider"
+                    android:layout_width="1dip"
+                    android:layout_height="20dp"
+                    android:layout_marginBottom="8dip"
+                    android:layout_marginTop="8dip"
+                    android:background="?attr/dividerVertical" />
+
+                <Button
+                    android:id="@+id/button"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/dummy_buttonn"
+                    android:onClick="splash2" />
+
+                <View
+                    android:id="@+id/Dividerr"
+                    android:layout_width="1dip"
+                    android:layout_height="20dp"
+                    android:layout_marginBottom="8dip"
+                    android:layout_marginTop="8dip"
+                    android:background="?attr/dividerVertical" />
+
+                <Button
+                    android:id="@+id/button3"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/dummy_buttonnn"
+                    android:onClick="splash3" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </FrameLayout>
+
+</FrameLayout>

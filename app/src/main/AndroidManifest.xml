@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="ro.mole.ro.nueva" >
+
+    <uses-permission android:name="android.permission.REBOOT"
+        tools:ignore="ProtectedPermissions" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <supports-screens android:smallScreens="false"
+        android:normalScreens="true"
+        android:largeScreens="true"
+        android:xlargeScreens="false"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/Theme.Sherlock" >
+        <activity
+            android:name="ro.mole.ro.nueva.SplashScreen"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:icon="@drawable/ic_launcher"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Sherlock" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="ro.mole.ro.nueva.Nueva1"
+            android:icon="@drawable/ic_launcher"
+            android:label="@string/title_activity_nueva1"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Sherlock" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="ro.mole.ro.nueva.Nueva2"
+            android:label="@string/title_activity_nueva2"
+            android:parentActivityName="ro.mole.ro.nueva.Nueva1"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Sherlock" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="ro.mole.ro.nueva.Nueva1" />
+        </activity>
+        <activity
+            android:name="ro.mole.ro.nueva.Nueva3"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/title_activity_ventana"
+            android:parentActivityName="ro.mole.ro.nueva.Nueva2"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Sherlock" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="ro.mole.ro.nueva.Nueva2" />
+        </activity>
+        <activity
+            android:name="ro.mole.ro.nueva.About"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/title_activity_about"
+            android:parentActivityName="ro.mole.ro.nueva.Nueva1"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Sherlock" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="ro.mole.ro.nueva.Nueva1" />
+        </activity>
+        <activity
+            android:name="ro.mole.ro.nueva.Splash1"
+            android:icon="@drawable/ic_launcher"
+            android:label="@string/dummy_button"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Sherlock" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="ro.mole.ro.nueva.Splash2"
+            android:icon="@drawable/ic_launcher"
+            android:label="@string/dummy_buttonn"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Sherlock" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="ro.mole.ro.nueva.Splash3"
+            android:icon="@drawable/ic_launcher"
+            android:label="@string/dummy_buttonnn"
+            android:parentActivityName="ro.mole.ro.nueva.Nueva3"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Sherlock" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="ro.mole.ro.nueva.Nueva3" />
+        </activity>
+
+    </application>
+
+</manifest>

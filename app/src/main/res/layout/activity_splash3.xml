@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android=
+    "http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/background_holo_dark">
+    <TextView android:id="@+id/textViewId1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/frame"
+        android:textAlignment="center" />
+    <Button
+        android:id="@+id/startSplash"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/start"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="5dp" />
+    <ImageView
+        android:contentDescription="@string/desc"
+        android:id="@+id/animacionImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:scaleType="centerCrop"
+        android:minHeight="150dp"
+        android:minWidth="150dp" />
+</LinearLayout>

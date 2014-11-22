@@ -1,0 +1,90 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="12dp"
+    android:orientation="vertical"
+    android:background="@drawable/background_holo_dark"
+    android:gravity="center">
+
+    <TextView android:text="@string/ola_tu" android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#ff3e84ff"
+        android:id="@+id/textView4"
+        android:textSize="22sp"
+        android:textStyle="bold|italic"
+        android:gravity="center"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="15dp" />
+
+    <ImageView
+        android:id="@+id/image_about"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:background="@drawable/logo"
+        android:layout_gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:layout_marginTop="15dp"
+        android:contentDescription="@string/calacola" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_gravity="center">
+
+        <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+            android:layout_gravity="center_vertical">
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dip"
+            android:layout_marginLeft="4dip"
+            android:layout_marginRight="4dip"
+            android:background="?attr/dividerVertical"
+            android:layout_alignParentTop="true"/>
+        <View
+            android:id="@+id/Divider"
+            android:layout_width="1dip"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="8dip"
+            android:layout_marginTop="8dip"
+            android:background="?attr/dividerVertical"
+            android:layout_centerHorizontal="true"/>
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_toLeftOf="@id/Divider"
+            android:background="?attr/selectableItemBackground"
+            android:text="@string/miboton"
+            android:onClick="pasarActividad3"
+            android:layout_alignParentBottom="true"
+            android:textColor="#ffffffff"
+            android:typeface="serif"
+            android:textStyle="bold" />
+        <Button
+            android:id="@+id/buttonl"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:background="?attr/selectableItemBackground"
+            android:layout_alignParentBottom="true"
+            android:onClick="activity1"
+            android:text="@string/go1"
+            android:layout_toRightOf="@id/Divider"
+            android:textColor="#ffffffff"
+            android:textStyle="bold"
+            android:typeface="sans" />
+
+
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

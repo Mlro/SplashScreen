@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="12dp"
+    android:orientation="vertical"
+    android:background="@drawable/background_holo_dark"
+    android:gravity="center">
+<ImageView
+    android:id="@+id/image_about"
+    android:layout_width="51dp"
+    android:layout_height="51dp"
+    android:background="@drawable/ic_launcher"
+    android:layout_gravity="center_horizontal"
+    android:orientation="horizontal"
+    android:layout_marginTop="7dp"
+    android:onClick="rotate"
+    android:contentDescription="@string/iclauncherr" />
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="1dp"
+    android:orientation="vertical"
+    android:layout_gravity="center_horizontal">
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="6dp"
+    android:textStyle="bold"
+    android:text="@string/rom_name"
+    android:gravity="center"
+    android:textColor="#33b5e5"
+    android:textSize="28.0sp" />
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="4dp"
+    android:text="@string/nameapp"
+    android:gravity="center"
+    android:textColor="#fff"
+    android:textSize="16.0sp" />
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="4dp"
+    android:text="@string/byname"
+    android:gravity="center"
+    android:textColor="#fff"
+    android:textSize="16.0sp" />
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="7dp"
+    android:layout_gravity="center"
+    android:orientation="vertical" >
+<View
+    android:layout_width="fill_parent"
+    android:layout_height="2dp"
+    android:gravity="bottom"
+    android:layout_marginBottom="4dp"
+    android:layout_marginTop="3dp"
+    android:layout_marginLeft="3dp"
+    android:layout_marginRight="3dp"
+    android:background="#cc33b5e5" />
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="4dp"
+    android:layout_marginLeft="8dp"
+    android:layout_marginRight="8dp" 
+    android:textStyle="bold"  
+    android:text="@string/dialog_enter"
+    android:textColor="#fff"
+    android:textSize="16.0sp" />  
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="48dp"
+    android:layout_marginTop="6dp">
+<View
+    android:layout_width="match_parent"
+    android:layout_height="1dip"
+    android:layout_marginLeft="4dip"
+    android:layout_marginRight="4dip"
+    android:background="?attr/dividerVertical"
+    android:layout_alignParentTop="true"/>
+<View
+    android:id="@+id/Divider"
+    android:layout_width="1dip"
+    android:layout_height="wrap_content"
+    android:layout_alignParentTop="true"
+    android:layout_alignParentBottom="true"
+    android:layout_marginBottom="8dip"
+    android:layout_marginTop="8dip"
+    android:background="?attr/dividerVertical" 
+    android:layout_centerHorizontal="true"/>
+<Button
+    android:id="@+id/XdaThread"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentTop="true"
+    android:layout_toLeftOf="@id/Divider"
+    android:background="?attr/selectableItemBackground"
+    android:text="@string/xdathread"
+    android:onClick="link"
+    android:layout_alignParentBottom="true"
+    android:textColor="#ffffffff" />
+<Button
+    android:id="@+id/Credits"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:layout_alignParentRight="true"
+    android:layout_alignParentTop="true"
+    android:background="?attr/selectableItemBackground"
+    android:text="@string/creditos"
+    android:layout_alignParentBottom="true" 
+    android:onClick="creditos"
+    android:layout_toRightOf="@id/Divider"
+    android:textColor="#ffffffff" />
+</RelativeLayout>  
+</LinearLayout>  
+</LinearLayout>
+</LinearLayout>
