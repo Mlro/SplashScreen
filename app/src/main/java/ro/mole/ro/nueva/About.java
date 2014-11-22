@@ -48,7 +48,7 @@ public class About extends SherlockFragmentActivity  {
     }
 
     public void link(View view){
-        startActivity(new Intent("android.intent.action.VIEW", Uri.parse("http://forum.xda-developers.com/showthread.php?t=2532865")));}
+        startActivity(new Intent("android.intent.action.VIEW", Uri.parse("https://github.com/Mlro/SplashScreen")));}
     public void creditos(View view){
         SimpleDialogFragment.createBuilder(this, getSupportFragmentManager()).setTitle(R.string.credits_title).setMessage(R.string.credits).show();}
 
