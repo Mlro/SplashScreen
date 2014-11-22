@@ -78,7 +78,7 @@ public class Nueva2 extends SherlockFragmentActivity implements
 
     private Intent getDefaultShareIntent() {
         Intent emailIntent = new Intent(Intent.ACTION_SEND);
-        emailIntent.putExtra(Intent.EXTRA_EMAIL, new String[]{"marin.dom64@gmail.com"});
+        emailIntent.putExtra(Intent.EXTRA_EMAIL, new String[]{"magnetomovil@gmail.com"});
         emailIntent.putExtra(Intent.EXTRA_SUBJECT, getResources().getText(R.string.email_subject));
         emailIntent.setType("plain/text");
         return emailIntent;
