@@ -96,14 +96,14 @@
     android:background="?attr/dividerVertical" 
     android:layout_centerHorizontal="true"/>
 <Button
-    android:id="@+id/XdaThread"
+    android:id="@+id/GithubThread"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
     android:layout_alignParentLeft="true"
     android:layout_alignParentTop="true"
     android:layout_toLeftOf="@id/Divider"
     android:background="?attr/selectableItemBackground"
-    android:text="@string/xdathread"
+    android:text="@string/githubthread"
     android:onClick="link"
     android:layout_alignParentBottom="true"
     android:textColor="#ffffffff" />
